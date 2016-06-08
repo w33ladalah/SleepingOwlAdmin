@@ -54,7 +54,7 @@ SleepingOwl Admin is an administrative interface builder for Laravel.
        * SleepingOwl Service Provider
        */
         SleepingOwl\Admin\Providers\SleepingOwlServiceProvider::class,
-  
+
         /*
        * Application Service Providers...
        */
@@ -121,9 +121,9 @@ Steps:
       'driver' => 'session',
       'provider' => 'administrators', // change existing provider
     ],
-    
+
     // or add new
-    
+
     'admin' => [
       'driver' => 'session',
       'provider' => 'administrators',
@@ -134,16 +134,16 @@ Steps:
 3. Setting up middleware
 
   By default `auth` middleware use default guard, selected in `config/auth.php`
-  
+
   ```php
   'defaults' => [
     'guard' => 'web', <- default
     ...
   ],
   ```
-  
+
   You can change default guard to `admin` or change middleware in `config/sleeping_owl.php` to
-  
+
   ```php
   'middleware' => ['web', 'auth:admin'],
   ```
@@ -157,7 +157,7 @@ You can download the demo project at https://github.com/SleepingOwlAdmin/demo
 ## Documentation
 
 * [Russian](http://sleepingowl.laravel.su/docs/4.0/)
-* English
+* [English](http://sleeping-owl.github.io/en/Introduction.html)
 
 ## Copyright and License
 
